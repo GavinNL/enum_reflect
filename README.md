@@ -2,6 +2,9 @@
 
 This is just an experiment to creating a simple reflection system for enum classes.
 
+In some of my projects, I need to convert from enums to json and back as well as being able to populate UI widgets with enum values (eg: combo boxes). It was becoming very annoying to handle all the case when there are lots of enums and lots of values. 
+
+This simple method allows me to create a simple reflection system which can convert string <-> enum, as well as loop though all enum values.
 
 ## Usage
 
@@ -40,3 +43,5 @@ EnemyType from_string<EnemyType>(string)
 # defined
 std::vector<EnemyValues> const& values<EnemyType>();
 ```
+
+
